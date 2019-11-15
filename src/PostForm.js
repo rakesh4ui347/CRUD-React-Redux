@@ -12,7 +12,12 @@ class PostForm extends Component {
             message,
             editing:false
         }
-        console.log(data)
+        console.log(data);
+    this.props.dispatch({
+      type:'ADD_POST',
+      data});
+    this.getTitle.value = '';
+    this.getMessage.value = '';
     }
 render() {
 return (
