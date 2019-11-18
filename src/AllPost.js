@@ -6,6 +6,7 @@ class AllPost extends Component {
         return (
             <div>
                 <h1>All Posts</h1>
+            {console.log(this.props.posts)}
             </div>
         );
     }
